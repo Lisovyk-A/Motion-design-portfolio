@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
   setTimeout(() => {
     const loader = document.getElementById('loader');
     if (loader) loader.classList.add('hidden');
-  }, 300);
+  }, 1200);
 });
 
 /* ── CUSTOM CURSOR ── */
@@ -154,21 +154,35 @@ function initCarousel(carouselEl, progressBarEl) {
     });
   }
 
-  // Video hover play + show first frame
+  // Lazy load + video hover play
   const cards = carouselEl.querySelectorAll('.carousel-card:not(.carousel-hint)');
   const isTouchDevice = 'ontouchstart' in window;
   let soundUnlocked = false;
 
+  // Lazy load observer — load video only when card is near viewport
+  const lazyObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const video = entry.target.querySelector('video');
+        if (video && !video.dataset.loaded) {
+          video.preload = 'metadata';
+          video.load();
+          video.addEventListener('loadeddata', () => {
+            video.currentTime = 0.1;
+            entry.target.classList.add('has-video');
+          }, { once: true });
+          video.dataset.loaded = 'true';
+        }
+        lazyObserver.unobserve(entry.target);
+      }
+    });
+  }, { root: carouselEl, rootMargin: '0px 600px 0px 0px', threshold: 0 });
+
   cards.forEach(card => {
+    lazyObserver.observe(card);
+
     const video = card.querySelector('video');
     if (!video) return;
-
-    video.addEventListener('loadeddata', () => {
-      video.currentTime = 0.1;
-      card.classList.add('has-video');
-    });
-
-    video.load();
 
     if (isTouchDevice) {
       let touchMoved = false;

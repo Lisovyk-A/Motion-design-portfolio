@@ -86,7 +86,7 @@ body {
   height: 100%;
   width: 0%;
   background: var(--accent);
-  animation: load 1.8s ease-in-out forwards;
+  animation: load 1s ease-in-out forwards;
 }
 .loader-text {
   font-family: var(--font-mono);
