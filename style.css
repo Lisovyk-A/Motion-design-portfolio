@@ -1,4 +1,4 @@
-*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; cursor: none !important; }
 
 :root {
   --black: #000000;
@@ -21,7 +21,7 @@ body {
   color: var(--white);
   font-family: var(--font-mono);
   overflow-x: hidden;
-  cursor: default;
+  cursor: none;
 }
 
 /* ═══════════════════════════════════════ */
