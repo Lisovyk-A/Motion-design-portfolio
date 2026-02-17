@@ -429,3 +429,5 @@ a, button { cursor: none; }
   .skill-row { flex-direction: column; align-items: flex-start; gap: 8px; }
   .skill-name { min-width: auto; }
 }
+
+
