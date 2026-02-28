@@ -27,7 +27,7 @@ function animateRing() {
 }
 animateRing();
 
-document.querySelectorAll('a, button, .work-card, .contact-email, .soft-tag, .timeline-tags span').forEach(el => {
+document.querySelectorAll('a, button, .work-card, .contact-email, .soft-tag, .timeline-tags span, .direction-card, .product-card, .product-link').forEach(el => {
   el.addEventListener('mouseenter', () => ring.classList.add('hover'));
   el.addEventListener('mouseleave', () => ring.classList.remove('hover'));
 });
@@ -79,7 +79,7 @@ if ('ontouchstart' in window) {
 /* ── ROTATING WORD (only on index page) ── */
 const rotatingEl = document.getElementById('rotatingWord');
 if (rotatingEl) {
-  const words = ['people', 'money', 'brands', 'ideas'];
+  const words = ['pixels', 'products', 'words', 'people'];
   let wordIndex = 0;
   let charIndex = 0;
   let isDeleting = false;

@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Andrii Lisovyi — Motion Portfolio</title>
+        <meta name="description" content="Motion design portfolio by Andrii Lisovyi. Performance ads, brand videos, VFX, and creative direction.">
+        <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <!-- LOADER -->
+        <div class="loader" id="loader">
+        <div class="loader-text">Loading</div>
+        <div class="loader-bar"></div>
+        </div>
+
+        <!-- DECORATIVE -->
+        <div class="grid-overlay"></div>
+        <div class="noise"></div>
+
+        <!-- CURSOR -->
+        <div class="cursor-dot" id="cursorDot"></div>
+        <div class="cursor-ring" id="cursorRing"></div>
+
+        <!-- NAV -->
+        <nav>
+        <a href="index.html" class="nav-logo">AL<span>.</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html">Hub</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="index.html#products">Products</a></li>
+            <li><a href="cv.html" class="nav-cv-btn">CV</a></li>
+        </ul>
+        <button class="burger" id="burger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+        </nav>
+
+        <!-- MOBILE MENU -->
+        <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-menu-links">
+            <li><a href="index.html">Hub</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="index.html#products">Products</a></li>
+            <li><a href="cv.html" class="nav-cv-btn">CV</a></li>
+        </ul>
+        </div>
+
+        <!-- HERO with showreel -->
+        <section class="hero" id="hero">
+        <div class="hero-video-wrap">
+            <video autoplay muted loop playsinline>
+            <source src="your-showreel.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-tag">Motion Design Portfolio</div>
+            <h1 class="hero-name">
+            Selected<br><span class="stroke">WORKS</span>
+            </h1>
+            <p class="hero-role">Crafting motion &middot; Shaping stories</p>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+        </section>
+
+        <!-- WORKS -->
+        <section id="works" class="works-section">
+        <div class="works-header">
+            <div class="section-label reveal">01 &mdash; Performance Ads</div>
+            <h2 class="section-heading reveal">Performance<br>&amp; motion<span style="color:var(--accent)">.</span></h2>
+        </div>
+
+        <!-- VERTICAL 9:16 CAROUSEL -->
+        <div class="carousel-wrap reveal">
+            <div class="carousel-fade carousel-fade--left"></div>
+            <div class="carousel-fade carousel-fade--right"></div>
+
+            <div class="carousel" id="carousel">
+
+            <div class="carousel-card carousel-hint">
+                <div class="hint-content">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+                <span>Drag to<br>explore</span>
+                </div>
+            </div>
+
+            <div class="carousel-card">
+                <div class="card-video-wrap">
+                <video muted loop playsinline preload="none">
+                    <source src="vid/work-01.mp4" type="video/mp4">
+                </video>
+                <div class="card-play-icon"></div>
+                <div class="card-poster">01</div>
+                </div>
+                <div class="card-info">
+                <div class="card-category">Performance Ad</div>
+                <div class="card-title">Hand-drawn animation</div>
+                <div class="card-client">Amo APPS</div>
+                </div>
+            </div>
+
+            <div class="carousel-card">
+                <div class="card-video-wrap">
+                <video muted loop playsinline preload="none">
+                    <source src="vid/work-14.mp4" type="video/mp4">
+                </video>
+                <div class="card-play-icon"></div>
+                <div class="card-poster">02</div>
+                </div>
+                <div class="card-info">
+                <div class="card-category">Performance Ad</div>
+                <div class="card-title">Animation</div>
+                <div class="card-client">MuzMaker</div>
+                </div>
+            </div>
+
+            <div class="carousel-card">
+                <div class="card-video-wrap">
+                <video muted loop playsinline preload="none">
+                    <source src="vid/work-13.mp4" type="video/mp4">
+                </video>
+                <div class="card-play-icon"></div>
+                <div class="card-poster">03</div>
+                </div>
+                <div class="card-info">
+                <div class="card-category">Video for App</div>
+                <div class="card-title">Animation</div>
+                <div class="card-client">CheckMyMeal</div>
+                </div>
+            </div>
+
+            <div class="carousel-card">
+                <div class="card-video-wrap">
+                <video muted loop playsinline preload="none">
+                    <source src="vid/work-02.mp4" type="video/mp4">
+                </video>
+                <div class="card-play-icon"></div>
+                <div class="card-poster">04</div>
+                </div>
+                <div class="card-info">
+                <div class="card-category">Performance Ad</div>
+                <div class="card-title">Tatoo animation</div>
+                <div class="card-client">Amo APPS</div>
+                </div>
+            </div>
+
+            <div class="carousel-card">
+                <div class="card-video-wrap">
+                <video muted loop playsinline preload="none">
+                    <source src="vid/work-15.mp4" type="video/mp4">
+                </video>
+                <div class="card-play-icon"></div>
+                <div class="card-poster">05</div>
+                </div>
+                <div class="card-info">
+                <div class="card-category">Performance Ad</div>
+                <div class="card-title">Animation</div>
+                <div class="card-client">Zeely.Ai</div>
+                </div>
+            </div>
+
+            <div class="carousel-card">
+                <div class="card-video-wrap">
+                <video muted loop playsinline preload="none">
+                    <source src="vid/work-03.mp4" type="video/mp4">
+                </video>
+                <div class="card-play-icon"></div>
+                <div class="card-poster">06</div>
+                </div>
+                <div class="card-info">
+                <div class="card-category">Performance Ad</div>
+                <div class="card-title">Chat animation</div>
+                <div class="card-client">Talefy</div>
+                </div>
+            </div>
+
+            <div class="carousel-card">
+                <div class="card-video-wrap">
+                <video muted loop playsinline preload="none">
+                    <source src="vid/work-04.mp4" type="video/mp4">
+                </video>
+                <div class="card-play-icon"></div>
+                <div class="card-poster">07</div>
+                </div>
+                <div class="card-info">
+                <div class="card-category">Performance Ad</div>
+                <div class="card-title">Dipfake</div>
+                <div class="card-client">Talefy</div>
+                </div>
+            </div>
+
+            <div class="carousel-card">
+                <div class="card-video-wrap">
+                <video muted loop playsinline preload="none">
+                    <source src="vid/work-05.mp4" type="video/mp4">
+                </video>
+                <div class="card-play-icon"></div>
+                <div class="card-poster">08</div>
+                </div>
+                <div class="card-info">
+                <div class="card-category">Performance Ad</div>
+                <div class="card-title">AI TV show</div>
+                <div class="card-client">Talefy</div>
+                </div>
+            </div>
+
+            <div class="carousel-card">
+                <div class="card-video-wrap">
+                <video muted loop playsinline preload="none">
+                    <source src="vid/work-06.mp4" type="video/mp4">
+                </video>
+                <div class="card-play-icon"></div>
+                <div class="card-poster">09</div>
+                </div>
+                <div class="card-info">
+                <div class="card-category">Performance Ad</div>
+                <div class="card-title">Performance video</div>
+                <div class="card-client">Talefy</div>
+                </div>
+            </div>
+
+            <div class="carousel-card">
+                <div class="card-video-wrap">
+                <video muted loop playsinline preload="none">
+                    <source src="vid/work-07.mp4" type="video/mp4">
+                </video>
+                <div class="card-play-icon"></div>
+                <div class="card-poster">10</div>
+                </div>
+                <div class="card-info">
+                <div class="card-category">Performance Ad</div>
+                <div class="card-title">UGC</div>
+                <div class="card-client">Amo APPS</div>
+                </div>
+            </div>
+
+            <div class="carousel-card">
+                <div class="card-video-wrap">
+                <video muted loop playsinline preload="none">
+                    <source src="vid/work-08.mp4" type="video/mp4">
+                </video>
+                <div class="card-play-icon"></div>
+                <div class="card-poster">11</div>
+                </div>
+                <div class="card-info">
+                <div class="card-category">Performance Ad</div>
+                <div class="card-title">CTA</div>
+                <div class="card-client">Muzmaker</div>
+                </div>
+            </div>
+
+            <div class="carousel-card">
+                <div class="card-video-wrap">
+                <video muted loop playsinline preload="none">
+                    <source src="vid/work-09.mp4" type="video/mp4">
+                </video>
+                <div class="card-play-icon"></div>
+                <div class="card-poster">12</div>
+                </div>
+                <div class="card-info">
+                <div class="card-category">Performance Ad</div>
+                <div class="card-title">Animation</div>
+                <div class="card-client">Talefy</div>
+                </div>
+            </div>
+
+            <div class="carousel-card">
+                <div class="card-video-wrap">
+                <video muted loop playsinline preload="none">
+                    <source src="vid/work-10.mp4" type="video/mp4">
+                </video>
+                <div class="card-play-icon"></div>
+                <div class="card-poster">13</div>
+                </div>
+                <div class="card-info">
+                <div class="card-category">Performance Ad</div>
+                <div class="card-title">Animation</div>
+                <div class="card-client">MHP</div>
+                </div>
+            </div>
+
+            <div class="carousel-card">
+                <div class="card-video-wrap">
+                <video muted loop playsinline preload="none">
+                    <source src="vid/work-11.mp4" type="video/mp4">
+                </video>
+                <div class="card-play-icon"></div>
+                <div class="card-poster">14</div>
+                </div>
+                <div class="card-info">
+                <div class="card-category">Performance Ad</div>
+                <div class="card-title">UGC</div>
+                <div class="card-client">Amo APPS</div>
+                </div>
+            </div>
+
+            <div class="carousel-card">
+                <div class="card-video-wrap">
+                <video muted loop playsinline preload="none">
+                    <source src="vid/work-12.mp4" type="video/mp4">
+                </video>
+                <div class="card-play-icon"></div>
+                <div class="card-poster">15</div>
+                </div>
+                <div class="card-info">
+                <div class="card-category">Performance Ad</div>
+                <div class="card-title">UGC</div>
+                <div class="card-client">Amo APPS</div>
+                </div>
+            </div>
+
+            </div>
+
+            <div class="carousel-progress">
+            <div class="carousel-progress-fill" id="carouselProgress"></div>
+            </div>
+        </div>
+
+        <!-- HORIZONTAL 16:9 CAROUSEL -->
+        <div class="carousel-sublabel reveal">
+            <span>Brand &amp; Content</span>
+        </div>
+
+        <div class="carousel-wrap reveal">
+            <div class="carousel-fade carousel-fade--left"></div>
+            <div class="carousel-fade carousel-fade--right"></div>
+
+            <div class="carousel carousel--h" id="carouselH">
+
+            <div class="carousel-card carousel-card--h">
+                <div class="card-video-wrap card-video-wrap--h">
+                <video muted loop playsinline preload="none">
+                    <source src="vid/reel-01.mp4" type="video/mp4">
+                </video>
+                <div class="card-play-icon"></div>
+                <div class="card-poster">01</div>
+                </div>
+                <div class="card-info">
+                <span class="card-index">01/05</span>
+                <div class="card-category">Brand Video</div>
+                <div class="card-title">Christmas Ad</div>
+                <div class="card-client">iSTUDIO</div>
+                </div>
+            </div>
+
+            <div class="carousel-card carousel-card--h">
+                <div class="card-video-wrap card-video-wrap--h">
+                <video muted loop playsinline preload="none">
+                    <source src="vid/reel-02.mp4" type="video/mp4">
+                </video>
+                <div class="card-play-icon"></div>
+                <div class="card-poster">02</div>
+                </div>
+                <div class="card-info">
+                <span class="card-index">02/05</span>
+                <div class="card-category">Brand Video</div>
+                <div class="card-title">Black Friday Ad</div>
+                <div class="card-client">iSTUDIO</div>
+                </div>
+            </div>
+
+            <div class="carousel-card carousel-card--h">
+                <div class="card-video-wrap card-video-wrap--h">
+                <video muted loop playsinline preload="none">
+                    <source src="vid/reel-03.mp4" type="video/mp4">
+                </video>
+                <div class="card-play-icon"></div>
+                <div class="card-poster">03</div>
+                </div>
+                <div class="card-info">
+                <span class="card-index">03/05</span>
+                <div class="card-category">Brand Video</div>
+                <div class="card-title">Adv</div>
+                <div class="card-client">iSTUDIO</div>
+                </div>
+            </div>
+
+            <div class="carousel-card carousel-card--h">
+                <div class="card-video-wrap card-video-wrap--h">
+                <video muted loop playsinline preload="none">
+                    <source src="vid/reel-04.mp4" type="video/mp4">
+                </video>
+                <div class="card-play-icon"></div>
+                <div class="card-poster">04</div>
+                </div>
+                <div class="card-info">
+                <span class="card-index">04/05</span>
+                <div class="card-category">Commercial</div>
+                <div class="card-title">Coronavirus stat animation</div>
+                <div class="card-client">PRM tv</div>
+                </div>
+            </div>
+
+            <div class="carousel-card carousel-card--h">
+                <div class="card-video-wrap card-video-wrap--h">
+                <video muted loop playsinline preload="none">
+                    <source src="vid/reel-05.mp4" type="video/mp4">
+                </video>
+                <div class="card-play-icon"></div>
+                <div class="card-poster">05</div>
+                </div>
+                <div class="card-info">
+                <span class="card-index">05/05</span>
+                <div class="card-category">Brand Video</div>
+                <div class="card-title">Black Friday Ad</div>
+                <div class="card-client">iSTUDIO</div>
+                </div>
+            </div>
+
+            </div>
+
+            <div class="carousel-progress">
+            <div class="carousel-progress-fill" id="carouselProgressH"></div>
+            </div>
+        </div>
+        </section>
+
+        <!-- CTA -->
+        <section id="contact">
+        <div class="contact">
+            <h2 class="contact-heading reveal">
+            Want to<br>work together<span class="accent">?</span>
+            </h2>
+            <p class="contact-sub reveal">
+            Got a motion project in mind? Let's make it move.
+            </p>
+            <a href="mailto:Andrii.lisovyi2003@gmail.com" class="contact-email reveal">
+                <span>Get in touch</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </a>
+            <div style="margin-top:24px;" class="reveal">
+                <a href="index.html" class="back-link">&larr; Back to hub</a>
+            </div>
+        </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+        <span>&copy; 2026 Andrii Lisovyi</span>
+        <div class="footer-links">
+            <a href="https://lisovyi.space" target="_blank" rel="noopener">Writing</a>
+            <a href="cv.html">CV</a>
+            <a href="mailto:Andrii.lisovyi2003@gmail.com">Email</a>
+        </div>
+        <span>Creative Specialist</span>
+        </footer>
+
+        <script src="script.js" defer></script>
+    </body>
+</html>
