@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="theme-color" content="#df4db5">
+  <title>SubLook - Privacy Policy</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #fff8f6;
+      --surface: rgba(255, 255, 255, 0.68);
+      --surface-strong: rgba(255, 255, 255, 0.82);
+      --text: #241724;
+      --body: #5b4658;
+      --muted: #8b7486;
+      --line: rgba(104, 45, 95, 0.13);
+      --accent: #d938d0;
+      --accent-warm: #ff9b56;
+      --accent-soft: rgba(217, 56, 208, 0.1);
+      --shadow: 0 22px 64px rgba(135, 67, 118, 0.14);
+      --font-display: "Avenir Next", "SF Pro Display", "Segoe UI", sans-serif;
+      --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+      --font-mono: "SFMono-Regular", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      --radius: 28px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at 10% 10%, rgba(217, 56, 208, 0.22), transparent 28%),
+        radial-gradient(circle at 88% 12%, rgba(255, 147, 86, 0.18), transparent 30%),
+        radial-gradient(circle at 50% 100%, rgba(255, 192, 92, 0.18), transparent 26%),
+        linear-gradient(180deg, #fff8fd 0%, var(--bg) 52%, #fff9f0 100%);
+      color: var(--text);
+      font-family: var(--font-sans);
+      line-height: 1.72;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(217, 56, 208, 0.28);
+      transition: color 180ms ease, border-color 180ms ease;
+    }
+
+    a:hover,
+    a:focus-visible {
+      color: #ab2caf;
+      border-color: currentColor;
+      outline: none;
+    }
+
+    main {
+      width: min(calc(100% - 32px), 920px);
+      margin: 0 auto;
+      padding: 32px 0 64px;
+    }
+
+    .masthead,
+    .sections,
+    .footer {
+      background: var(--surface);
+      border: 1px solid rgba(255, 255, 255, 0.52);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+    }
+
+    .masthead {
+      padding: 28px;
+      border-radius: var(--radius);
+    }
+
+    .app-head {
+      display: inline-flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .app-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 16px;
+      display: block;
+      flex: 0 0 auto;
+      box-shadow: 0 12px 28px rgba(217, 56, 208, 0.22);
+    }
+
+    .app-label {
+      display: inline-flex;
+      align-items: center;
+      color: var(--muted);
+      font-size: 0.77rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 12ch;
+      margin-top: 18px;
+      font-family: var(--font-display);
+      font-size: clamp(2.3rem, 5vw, 3.6rem);
+      font-weight: 700;
+      line-height: 0.98;
+      letter-spacing: -0.05em;
+    }
+
+    .lead {
+      max-width: 60ch;
+      margin-top: 18px;
+      color: var(--body);
+      font-size: 1rem;
+    }
+
+    .submeta {
+      margin-top: 20px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--muted);
+      font-size: 0.73rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .sections {
+      margin-top: 18px;
+      padding: 10px 28px 6px;
+      border-radius: calc(var(--radius) + 2px);
+    }
+
+    .section {
+      display: grid;
+      grid-template-columns: 54px minmax(0, 1fr);
+      gap: 18px;
+      padding: 24px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .section:first-child {
+      border-top: 0;
+    }
+
+    .section-index {
+      color: var(--accent);
+      font-size: 0.77rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding-top: 3px;
+    }
+
+    h2 {
+      font-family: var(--font-display);
+      font-size: clamp(1.2rem, 1.9vw, 1.46rem);
+      font-weight: 650;
+      line-height: 1.14;
+      letter-spacing: -0.03em;
+    }
+
+    p,
+    li {
+      color: var(--body);
+      font-size: 0.97rem;
+    }
+
+    .section p + p,
+    .section p + ul,
+    .section ul + p {
+      margin-top: 12px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li + li {
+      margin-top: 8px;
+    }
+
+    code {
+      padding: 0.18rem 0.5rem;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      border: 1px solid rgba(217, 56, 208, 0.12);
+      font-family: var(--font-mono);
+      font-size: 0.86em;
+      word-break: break-word;
+    }
+
+    .footer {
+      margin-top: 18px;
+      padding: 20px 28px;
+      border-radius: 22px;
+      color: var(--muted);
+      font-size: 0.76rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    @media (max-width: 720px) {
+      main {
+        width: min(calc(100% - 24px), 920px);
+        padding: 20px 0 40px;
+      }
+
+      .masthead,
+      .sections,
+      .footer {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      .section {
+        grid-template-columns: 1fr;
+        gap: 10px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      * {
+        transition: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header class="masthead">
+      <div class="app-head">
+        <img class="app-icon" src="./sublookicon.png" alt="SubLook app icon">
+        <div class="app-label">SubLook · Personal Subscription Tracker</div>
+      </div>
+      <h1>Privacy Policy</h1>
+      <p class="lead">SubLook is designed to help you track your personal subscriptions while keeping data handling minimal. Information you enter is processed primarily on your device and is not used for advertising, profiling, or data resale.</p>
+      <div class="submeta">Last updated · April 5, 2026</div>
+    </header>
+
+    <div class="sections">
+      <section class="section">
+        <div class="section-index">01</div>
+        <div>
+          <h2>Contact</h2>
+          <p>If you have any questions about this Privacy Policy, you can contact us at <a href="mailto:andrii.lisovyi2003@gmail.com">andrii.lisovyi2003@gmail.com</a>.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-index">02</div>
+        <div>
+          <h2>Information We Process</h2>
+          <p>When you use SubLook, the app may process information that you choose to enter, including:</p>
+          <ul>
+            <li>subscription names;</li>
+            <li>plan names;</li>
+            <li>categories;</li>
+            <li>prices and currencies;</li>
+            <li>billing cycle details;</li>
+            <li>upcoming billing dates;</li>
+            <li>trial end dates;</li>
+            <li>subscription end dates;</li>
+            <li>notes;</li>
+            <li>visual customization choices, such as colors, emojis, and optional custom images.</li>
+          </ul>
+          <p>The app may also store certain local preferences, such as your selected currency and notification settings.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-index">03</div>
+        <div>
+          <h2>How We Use Information</h2>
+          <p>SubLook uses this information only to provide the app's functionality, including:</p>
+          <ul>
+            <li>saving and displaying your subscriptions;</li>
+            <li>calculating upcoming charges;</li>
+            <li>showing payment schedules and calendar views;</li>
+            <li>creating local reminders for upcoming payments or trial endings;</li>
+            <li>displaying your chosen subscription artwork and customization;</li>
+            <li>supporting optional in-app tip purchases through Apple.</li>
+          </ul>
+          <p>We do not use your information for advertising, profiling, or selling data to third parties.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-index">04</div>
+        <div>
+          <h2>Where Your Data Is Stored</h2>
+          <p>Your subscription data is stored locally on your device.</p>
+          <p>If iCloud is available for your Apple account and device, SubLook may also sync your data through Apple's iCloud and CloudKit services. In that case, Apple processes that synced data under Apple's own terms and privacy policies.</p>
+          <p>We do not have direct access to your personal iCloud account or the contents of your iCloud storage.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-index">05</div>
+        <div>
+          <h2>Photos and Images</h2>
+          <p>If you choose to add a custom image to a subscription, SubLook accesses only the image you select through Apple's system photo picker.</p>
+          <p>Selected images are stored locally on your device and may also be included in iCloud sync through Apple's services if syncing is available. We do not upload your photos to our own servers.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-index">06</div>
+        <div>
+          <h2>Notifications</h2>
+          <p>If you enable reminders, SubLook may request permission to send notifications.</p>
+          <p>When enabled, reminders are generated locally on your device. These notifications may include information such as the subscription name, amount, or a reminder that a payment or trial end date is approaching.</p>
+          <p>We do not send notification content to our own servers.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-index">07</div>
+        <div>
+          <h2>In-App Purchases</h2>
+          <p>SubLook may offer optional tip purchases through Apple's In-App Purchase system using StoreKit.</p>
+          <p>Payment processing, billing information, and related transaction data are handled by Apple. We do not receive your full payment card details or banking information.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-index">08</div>
+        <div>
+          <h2>Data We Do Not Collect</h2>
+          <p>SubLook does not use:</p>
+          <ul>
+            <li>third-party analytics SDKs;</li>
+            <li>advertising SDKs;</li>
+            <li>cross-app or cross-site tracking;</li>
+            <li>advertising identifiers for targeted advertising;</li>
+            <li>data brokers or marketing platforms.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-index">09</div>
+        <div>
+          <h2>Legal Basis for Processing</h2>
+          <p>If you are located in a jurisdiction that requires a legal basis for processing personal data, we process information on the following bases:</p>
+          <ul>
+            <li>to provide the functionality of the app;</li>
+            <li>based on your consent, where you grant access to photos or notifications;</li>
+            <li>where necessary to respond to support requests you send to us.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-index">10</div>
+        <div>
+          <h2>Data Retention and Deletion</h2>
+          <p>Your data remains on your device, and where applicable in your iCloud account, until you delete it.</p>
+          <p>You can delete your data by:</p>
+          <ul>
+            <li>deleting subscriptions inside the app;</li>
+            <li>removing the app from your device;</li>
+            <li>managing or deleting related iCloud data through your Apple account settings.</li>
+          </ul>
+          <p>If you contact us by email, we may retain your contact information and message for as long as necessary to respond to your request and manage support communications.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-index">11</div>
+        <div>
+          <h2>Security</h2>
+          <p>We aim to minimize the data we handle and rely on Apple's platform security, local device storage, and Apple's iCloud and CloudKit infrastructure where applicable.</p>
+          <p>However, no method of electronic storage or transmission is completely secure, and we cannot guarantee absolute security.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-index">12</div>
+        <div>
+          <h2>Children's Privacy</h2>
+          <p>SubLook is not directed to children under 13, and we do not knowingly collect personal information from children.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-index">13</div>
+        <div>
+          <h2>Your Rights</h2>
+          <p>Depending on your location, you may have rights to access, correct, delete, or restrict the processing of personal data, or to object to certain processing.</p>
+          <p>Because SubLook stores most data locally on your device or in your personal iCloud account, many of these actions can be performed directly by you through the app and your Apple settings.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-index">14</div>
+        <div>
+          <h2>Changes to This Privacy Policy</h2>
+          <p>We may update this Privacy Policy from time to time. Any updates will be reflected by posting the revised version with a new "Last updated" date.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-index">15</div>
+        <div>
+          <h2>Contact Us</h2>
+          <p>If you have any questions about this Privacy Policy, please contact <a href="mailto:andrii.lisovyi2003@gmail.com">andrii.lisovyi2003@gmail.com</a>.</p>
+        </div>
+      </section>
+    </div>
+
+    <footer class="footer">
+      SubLook Privacy Policy · <a href="mailto:andrii.lisovyi2003@gmail.com">andrii.lisovyi2003@gmail.com</a>
+    </footer>
+  </main>
+</body>
+</html>
